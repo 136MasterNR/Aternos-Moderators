@@ -1,17 +1,47 @@
+@import url(https://fonts.googleapis.com/css?family=Play:400,700&subset=cyrillic,cyrillic-ext,greek,latin-ext&display=swap);
+
+:root {
+	--font-main: Play, sans-serif;
+    --font-mono: "Roboto Mono", sans-serif;
+    --bold: 700;
+
+    --color-dark: #2D3943;
+    --color-light: #f0f0f0;
+    --color-main: #2b87d3;
+    --color-danger: #F62451;
+    --color-success: #1fd78d;
+    --color-warn: #EB7B59;
+    --color-loading: #A4A4A4;
+
+    --color-dark-mode: #161c21;
+    --color-dark-text: #47535D;
+    --color-dark-mark: #40505c;
+	--color-dark-hover: #47535D;
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
 body {
-   background-image: url("https://us.123rf.com/450wm/panychev/panychev1704/panychev170400037/75666147-dark-blue-and-black-gradient-texture-background-abstract-surface-material.jpg?ver=6");
+	background-image: url("https://us.123rf.com/450wm/panychev/panychev1704/panychev170400037/75666147-dark-blue-and-black-gradient-texture-background-abstract-surface-material.jpg?ver=6");
    background-repeat: no-repeat;
    background-size: cover;
 }
 #modlist-1{
 	display: flex; /* or inline-flex */
+	flex-direction: row;
 	margin-left: 15vw;
+	margin-right: 15vw;
 	color:lightblue;
 	width: 33%;
 }
 #modlist-2{
 	display: flex; /* or inline-flex */
 	margin-left: 15vw;
+	margin-right: 15vw;
 	color:lightblue;
 	width: 33%;
 }
@@ -19,11 +49,19 @@ body {
 #moditem #item{
 	border: solid blue 0.6vw;
 	outline: none;
-	border-color: #9ecaed;
+	border-color: #2b87d3;
 	box-shadow: 0 0 2vw #9ecaed;
 }
 #moditem #text{
 	float:left;
 	font-size: 1.5vw;
 }
+#text {
+	color: #2b87d3;
+}
+
+#text h1 {
+	width: 33%;
+}
+
 img{height:10vw;width:10vw}
