@@ -3,7 +3,13 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
 }
-#modlist{
+#modlist-1{
+	display: flex; /* or inline-flex */
+	margin-left: 24vw;
+	font-size: 1.5vw;
+	color:lightblue;
+}
+#modlist-2{
 	display: flex; /* or inline-flex */
 	margin-left: 24vw;
 	font-size: 1.5vw;
