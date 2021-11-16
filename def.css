@@ -5,17 +5,25 @@ body {
 }
 #modlist-1{
 	display: flex; /* or inline-flex */
-	margin-left: 24vw;
-	font-size: 1.5vw;
+	margin-left: 15vw;
 	color:lightblue;
+	width: 33%;
 }
 #modlist-2{
 	display: flex; /* or inline-flex */
-	margin-left: 24vw;
-	font-size: 1.5vw;
+	margin-left: 15vw;
 	color:lightblue;
+	width: 33%;
 }
-#moditem{
-	padding:2vw;
-	border: solid blue 25px
+#moditem{padding:2vw;}
+#moditem #item{
+	border: solid blue 0.6vw;
+	outline: none;
+	border-color: #9ecaed;
+	box-shadow: 0 0 2vw #9ecaed;
 }
+#moditem #text{
+	float:left;
+	font-size: 1.5vw;
+}
+img{height:10vw;width:10vw}
