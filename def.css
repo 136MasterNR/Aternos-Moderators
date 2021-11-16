@@ -1,0 +1,6 @@
+body{
+	position:absolute;
+	overflow:hidden;
+	z-index:-1;
+	content:url(https://cdn.discordapp.com/attachments/779745579684986911/793120052936572948/logotype-light.png) url(https://us.123rf.com/450wm/panychev/panychev1704/panychev170400037/75666147-dark-blue-and-black-gradient-texture-background-abstract-surface-material.jpg?ver=6) url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ3wcqVLu0N7C0S-QWwLtYHfdZvrJ2y6TaPA&usqp=CAU);
+}
