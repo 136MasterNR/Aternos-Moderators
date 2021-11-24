@@ -29,6 +29,7 @@ body {
 	background-image: url("https://us.123rf.com/450wm/panychev/panychev1704/panychev170400037/75666147-dark-blue-and-black-gradient-texture-background-abstract-surface-material.jpg?ver=6");
    background-repeat: no-repeat;
    background-size: cover;
+   user-select: none;
 }
 #modlist-1{
 	display: flex; /* or inline-flex */
