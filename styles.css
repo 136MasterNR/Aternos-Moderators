@@ -38,6 +38,7 @@ body {
     color: white;
     display: flex;
     margin: auto;
+    padding: 5px 0 10px 5px;
 }
 
 .list {
