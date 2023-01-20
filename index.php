@@ -11,6 +11,9 @@
         <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
         <link rel="icon" href="./assets/img/logo.png">
     </head>
+
+    <?php include 'getusers.php';?>
+
     <body>
         <header>
             <img src="./assets/img/header.svg">The website has been updated! Developed by <a href="https://github.com/Naibuu">Naibuu</a></img>
@@ -23,10 +26,10 @@
                 <div class="moderator">
                     <!--839237573595365406-->
                     <div class="image">
-                        <img src="assets/img/avatar/bluewy.png" alt="Spyro">
+                        <img src="<?php echo getUser("josh", false) ?>" alt="Spyro">
                     </div>
                     <div class="text">
-                        <h3>Spyro <br>
+                        <h3><?php echo getUser("josh", true) ?> <br>
                             <span>Since September 2018
                                 </span>
                             </h3>
@@ -35,10 +38,10 @@
                 <div class="moderator">
                     <!--117003078502187009-->
                     <div class="image">
-                        <img src="assets/img/avatar/joakim.png" alt="Joakim">
+                        <img src="<?php echo getUser("joa", false) ?>" alt="Joakim">
                     </div>
                     <div class="text">
-                        <h3>Joakim <br>
+                        <h3><?php echo getUser("joa", true) ?> <br>
                             <span>Since March 2019
                                 </span>
                             </h3>
@@ -47,10 +50,10 @@
                 <div class="moderator">
                     <!--235428738748121088-->
                     <div class="image">
-                        <img src="assets/img/avatar/amgelo.png" alt="Amgelo">
+                        <img src="<?php echo getUser("amg", false) ?>" alt="Amgelo">
                     </div>
                     <div class="text">
-                        <h3>Amgelo <br>
+                        <h3><?php echo getUser("amg", true) ?> <br>
                             <span>Since March 2020
                                 </span>
                             </h3>
@@ -59,10 +62,10 @@
                 <div class="moderator">
                     <!--912852147392102421-->
                     <div class="image">
-                        <img src="assets/img/avatar/jay.png" alt="Jay">
+                        <img src="<?php echo getUser("jay", false) ?>" alt="Jay">
                     </div>
                     <div class="text">
-                        <h3>Jay <br>
+                        <h3><?php echo getUser("jay", true) ?> <br>
                             <span>Since June 2020
                                 </span>
                             </h3>
@@ -71,10 +74,10 @@
                 <div class="moderator">
                     <!--435534715831975938-->
                     <div class="image">
-                        <img src="assets/img/avatar/alex.png" alt="Alex22">
+                        <img src="<?php echo getUser("alex", false) ?>" alt="Alex22">
                     </div>
                     <div class="text">
-                        <h3>Alex22 <br>
+                        <h3><?php echo getUser("alex", true) ?> <br>
                             <span>Since August 2020
                                 </span>
                             </h3>
@@ -83,10 +86,10 @@
                 <div class="moderator">
                     <!--505669157401133076-->
                     <div class="image">
-                        <img src="assets/img/avatar/136masternr.png" alt="136MasterNR">
+                        <img src="<?php echo getUser("136", false) ?>" alt="136MasterNR">
                     </div>
                     <div class="text">
-                        <h3>136MasterNR <br>
+                        <h3><?php echo getUser("136", true) ?> <br>
                             <span>Since January 2021
                                 </span>
                             </h3>
@@ -95,10 +98,10 @@
                 <div class="moderator">
                     <!--603516627023036416-->
                     <div class="image">
-                        <img src="assets/img/avatar/adriel.png" alt="Adriel">
+                        <img src="<?php echo getUser("adr", false) ?>" alt="Adriel">
                     </div>
                     <div class="text">
-                        <h3>Adriel <br>
+                        <h3><?php echo getUser("adr", true) ?> <br>
                             <span>Since March 2021
                                 </span>
                         </h3>
@@ -107,10 +110,10 @@
                 <div class="moderator">
                     <!--185604754947178496-->
                     <div class="image">
-                        <img src="assets/img/avatar/ji.png" alt="Ji">
+                        <img src="<?php echo getUser("ji", false) ?>" alt="Ji">
                     </div>
                     <div class="text">
-                        <h3>Ji <br>
+                        <h3><?php echo getUser("ji", true) ?> <br>
                             <span>Since July 2021
                                 </span>
                         </h3>
@@ -119,10 +122,10 @@
                 <div class="moderator">
                     <!--370258256775479307-->
                     <div class="image">
-                        <img src="assets/img/avatar/heelys.png" alt="Hilex23">
+                        <img src="<?php echo getUser("hee", false) ?>" alt="Hilex23">
                     </div>
                     <div class="text">
-                        <h3>Heelys32 <br>
+                        <h3><?php echo getUser("hee", true) ?> <br>
                             <span>Since September 2021
                                 </span>
                             </h3>
@@ -131,10 +134,10 @@
                 <div class="moderator">
                     <!--674610610662539274-->
                     <div class="image">
-                        <img src="assets/img/avatar/powerful845tiger.png" alt="Powerful845tiger">
+                        <img src="<?php echo getUser("tig", false) ?>" alt="Powerful845tiger">
                     </div>
                     <div class="text">
-                        <h3>Powerful845tiger <br>
+                        <h3><?php echo getUser("tig", true) ?> <br>
                             <span>Since March 2022
                                 </span>
                             </h3>
