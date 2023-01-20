@@ -16,7 +16,7 @@
 
     <body>
         <header>
-            <img src="./assets/img/header.svg">The website has been updated! Developed by <a href="https://github.com/Naibuu">Naibuu</a></img>
+            <img src="./assets/img/header.svg" alt="header-img">Website developed by <a href="https://github.com/Naibuu">Naibuu</a> and the Aternos moderators.
         </header>
         <div class="moderators" id="moderators">
             <div class="title">
