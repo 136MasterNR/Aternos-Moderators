@@ -1,179 +1,212 @@
-* {
-    font-family: 'Play', sans-serif;
-    box-sizing: border-box;
-}
-
-img {
-    -webkit-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-}
-
 body {
-    background: var(--white);
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-:root {
-    --gray: #2D3943;
-    --white: #f0f0f0;
-    --blue: #2b87d3;
-    --black: #161c21;
+.moderators-page {
+    width: 95%;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    position: relative;
 }
 
-header {
-    background: var(--gray);
-    height: 40px;
-    text-align: center;
-    color: var(--white);
+.section {
+    margin-bottom: 40px;
 }
-
-header img {
-    filter: invert(1);
-    margin-right: 5px;
-    height: 40px;
-    width: 40px;
-}
-
-header a,a:hover {
-    text-decoration: none;
-    color: var(--blue)
-}
-
-/*** title ***/
 
 .title {
     display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 15px;
+}
+
+.title img {
+    margin-right: 20px;
+    border-radius: 15px;
 }
 
 .title h1 {
-    margin: 5px 5px 0;
-    color: var(--gray);
-    font-weight: 700;
-    text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.0em;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
 }
 
-/*** mod listing ***/
-
-.moderators .list .moderator {
-    margin: 15px;
-    text-align: left;
-    display: flex;
-}
-
-.moderators .list .moderator .text {
-    margin: 28px 15px 0;
-}
-
-.moderators .former {
-    margin: 50px 0 100px 0;
-}
-
-.moderators {
-    padding-top: 20px;
-    width: 1200px;
-    max-width: 100%;
-    margin: 0 auto;
-}
-
-.moderators .list {
-    text-align: center;
-    padding-top: 50px;
+.moderator-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
-.moderators .list img {
-    width: 128px;
-    height: 128px;
-    border-radius: 2px;
-    border: 5px solid var(--blue);
-    background: var(--gray);
+.moderator-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.moderators .list .text h3 {
-    font-weight: 700;
-    font-size: 1.5rem;
-    color: var(--blue);
+.moderator-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.moderators .list .text span {
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    color: var(--gray);
-    opacity: 0.9;
+.moderator-card .image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: 0 0 0 5px #2B87D3;
 }
 
-/* Auto Adjustment */
+.moderator-card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-@media (max-width: 1200px) {
+.moderator-card .text h3 {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    color: #3498db;
+}
 
-    .moderators {
-        padding-top: 20px;
-        width: 800px;
-        max-width: 100%;
-        margin: 0 auto;
-    }
+.moderator-card .text span {
+    font-size: 0.7em;
+    color: #777;
+}
 
-    .moderators .list {
-        text-align: center;
-        padding-top: 50px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+.former .title h1 {
+    color: #2c3e50; /* Changed to default title color, no red */
+}
 
+.former-moderators .moderator-card .text h3 {
+    color: #3498db; /* Changed to default moderator name color, no red */
+}
+
+@media (max-width: 768px) {
     .title {
-        align-items: center;
-        justify-content: center;
+        flex-direction: column;
         text-align: center;
-        display: flex;
     }
-
+    .title img {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
     .title h1 {
-        margin: 5px 5px 0;
-        color: var(--gray);
-        font-weight: 700;
-        text-align: center;
-        font-size: 2.5rem;
+        font-size: 2.5em;
     }
-}
-
-@media (max-width: 800px) {
-    .moderators .list {
-        margin: 0 auto;
-        text-align: center;
-        padding-top: 50px;
-        display: grid;
+    .moderator-list {
         grid-template-columns: 1fr;
     }
+}
 
-    .title h1 {
-        margin: 0px 5px 0;
-        color: var(--gray);
-        font-weight: 700;
-        text-align: center;
-        font-size: 1.5rem;
-    }
-    
-    .title img {
-        width: 48px;
-        height: 48px;
-    }
+body.dark-mode {
+    background-color: #121212;
+    color: #eee;
+}
 
-    .moderators .list .moderator {
-        margin: 15px;
-        text-align: center;
-        display: block;
-    }
+body.dark-mode .moderators-page {
+    background-color: #1e1e1e;
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.1);
+}
 
-    header {
-        line-height: 0;
-        background: var(--gray);
-        height: 60px;
-        text-align: center;
-        color: var(--white);
-    }
-    
+body.dark-mode .moderator-card {
+    background-color: #252525;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .moderator-card .text h3,
+body.dark-mode .title h1 {
+    color: #87CEFA;
+}
+
+body.dark-mode .moderator-card .text span {
+    color: #bbb;
+}
+
+body.dark-mode .title {
+    border-bottom-color: #555;
+}
+
+body.dark-mode .moderator-card .image {
+    box-shadow: 0 0 0 5px #87CEFA;
+}
+
+body.dark-mode .former .title h1,
+body.dark-mode .former-moderators .moderator-card .text h3 {
+    color: #87CEFA; /* Changed to default dark mode title/name color, no red */
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#theme-toggle:hover {
+    background-color: #e0e0e0;
+}
+
+#theme-toggle i {
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+#theme-toggle i.fa-sun {
+    color: #ffc107;
+    display: inline-block;
+}
+
+#theme-toggle i.fa-moon {
+    display: none;
+    color: #343a40;
+}
+
+body.dark-mode #theme-toggle {
+    background-color: #333;
+}
+
+body.dark-mode #theme-toggle:hover {
+    background-color: #444;
+}
+
+body.dark-mode #theme-toggle i.fa-moon {
+    color: #fff;
+    display: inline-block;
+}
+
+body.dark-mode #theme-toggle i.fa-sun {
+    display: none;
 }
